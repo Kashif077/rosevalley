@@ -1,0 +1,170 @@
+extends layout
+
+block content
+  h1= title
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg="images/bg/12.jpg" data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+      .section-title
+        h4 Enjoy your time in our Hotel with pleasure.
+        h2 About The Hotel
+        .section-separator
+          span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+      .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span About Hotel
+  
+  .content-section
+    .section-dec
+    .container
+      .row
+        .col-lg-6
+          .section-title.text-align_left(style='margin-top: 50px;')
+            h4 Enjoy your time in our Hotel
+            h2 About Our Hotel
+          .text-block.tb-sin
+            p.has-drop-cap
+              | t the Rose Valley Hotel, every detail is crafted to provide a luxurious and serene experience. Our impeccable service and elegant surroundings promise a stay that you&apos;ll cherish forever. Nestled amidst scenic beauty, our hotel combines modern amenities with classic charm.
+              | From the moment you arrive, you are greeted with warmth and hospitality, ensuring that your stay is nothing short of perfection. Our rooms and suites are designed with comfort and style in mind, offering a tranquil retreat after a day of exploration or business meetings.
+              | Indulge in our gourmet dining options, where our chefs prepare exquisite dishes that tantalize your taste buds. Whether you&apos;re enjoying a casual meal or a fine dining experience, the culinary delights at Rose Valley Hotel are sure to impress.
+              | Our state-of-the-art facilities cater to all your needs, whether you are here for a relaxing getaway, a corporate event, or a special celebration. Enjoy our luxurious spa, take a dip in our pristine pool, or explore the local attractions with ease.
+            p
+              | Nestled in the heart of nature, Rose Valley Hotel stands as a beacon of elegance and tranquility. Every corner of our establishment is designed to offer you an unforgettable stay, blending luxury with the serene beauty of our surroundings.
+              | From the moment you step into our grand lobby, you&rsquo;ll be embraced by an atmosphere of sophistication and warmth. Our dedicated staff is committed to providing exceptional service, ensuring your stay is as comfortable and memorable as possible.
+              | Our beautifully appointed rooms and suites offer a sanctuary of comfort and style, with each space thoughtfully designed to cater to your needs. Whether you&apos;re unwinding after a day of sightseeing or preparing for a business meeting, you&apos;ll find everything you need right at your fingertips
+            a.btn.fl-btn(href='/contact') Call For Reservation
+            .dc_dec-item_left
+              span
+        .col-lg-6
+          .image-collge-wrap
+            .main-iamge
+              img.respimg(src='images/all/10.jpg' alt='')
+              #html5-videos.video_link.image-popup(data-html='#video1')
+                i.fas.fa-play
+                span Play Story Presentation  Video
+            .dc_dec-item_right
+              span
+            .about-img-hotifer.dark-bg
+              .about-img-hotifer-wrap
+                p
+                  | our website is fully responsive so visitors can view our content from their choice of device.
+                
+                h5 ROSE CEO
+            #video1.popup_video(style='display:none;' data-videolink='video/1.mp4')
+              video.lg-video-object.lg-html5(controls='' preload='none')
+                source(src='https://diamant.kwst.net/' type='video/mp4')
+      .sc-dec(style='left: -220px; bottom: -100px;')
+    .content-dec2.fs-wrapper
+    .content-dec
+      span
+  
+  .content-section.parallax-section.hidden-section.dark-bg(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/14.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay.overlay-bold
+    .container
+      
+      .inline-facts-wrap
+        .inline-facts
+          .milestone-counter
+            .stats.animaper
+              .num(data-content='0' data-num='254') 154
+          h6 New Visiters Every Week
+        
+        .inline-facts
+          .milestone-counter
+            .stats.animaper
+              .num(data-content='0' data-num='12168') 12168
+          h6 Happy Customers Every Year
+
+        .inline-facts
+          .milestone-counter
+            .stats.animaper
+              .num(data-content='0' data-num='172') 172
+          h6 Won Awards
+        
+        .inline-facts
+          .milestone-counter
+            .stats.animaper
+              .num(data-content='0' data-num='732') 732
+          h6 Weekly Deliveries
+     
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  
+  .content-section.dark-bg.parallax-section.no-padding
+    .row
+      .st-gallery
+        .section-title
+          h4 Enjoy your time in our Hotel with pleasure.
+          h2 Our Gallery
+          .section-separator
+            span
+              i.fa-thin.fa-gem
+        .map-dec2
+      .col-lg-3
+      .col-lg-9
+        
+        .single-carousle-container2
+          .single-carousel-wrap2
+            
+            .single-carousel2.fl-wrap.lightgallery(data-mousecontrol='0')
+              .swiper-container
+                .swiper-wrapper
+                  
+                  .swiper-slide.hov_zoom
+                    img(src='images/room/1.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/1.jpg')
+                      i.fal.fa-search
+                  
+                  .swiper-slide.hov_zoom
+                    img(src='images/room/2.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/2.jpg')
+                      i.fal.fa-search
+                
+                  .swiper-slide.hov_zoom
+                    img(src='images/room/3.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/3.jpg')
+                      i.fal.fa-search
+                  
+                  .swiper-slide.hov_zoom
+                    img(src='images/room/5.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/5.jpg')
+                      i.fal.fa-search
+                  
+                  .swiper-slide.hov_zoom
+                    img(src='images/room/4.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/4.jpg')
+                      i.fal.fa-search
+
+            .fw-carousel-button-prev.slider-button
+              i.fa-solid.fa-caret-left
+            .fw-carousel-button-next.slider-button
+              i.fa-solid.fa-caret-right
+            .sc-controls.fwc-contr.fwc_pag
+              .ss-slider-pagination
+          
+  .content-dec
+    span
+
+
+
+
+
+
+
+

@@ -1,0 +1,244 @@
+extends layout
+
+block content
+  h1= title
+  .header-overlay.close_cart-init
+
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/6.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+        .section-title
+            h4 Enjoy your time in our Hotel with pleasure.
+            h2 Our Last News
+        .section-separator
+            span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+        .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span Rooms And Suites
+  .content-section
+    .section-dec
+    .content-dec2.fs-wrapper
+    .container
+      .row
+        .col-lg-8
+          .post-container
+            .dec-container
+              .text-block
+                .post-items
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/1.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') Garden Family Room
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span March 10, 2024
+                            li
+                              i.fa-light.fa-comment
+                              span 2 comments
+                        p
+                          | Experience the perfect family getaway in our spacious Garden Family Room, blending comfort with the serene beauty of nature.
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/2.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') Premium Panorama Room
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span September 10, 2023
+                            li
+                              i.fa-light.fa-comment
+                              span 0 comments
+                        p
+                          | Our Premium Panorama Room offers breathtaking views and luxurious amenities, ensuring a memorable stay.
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/3.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') Connecting the Lost
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span August 10, 2023
+                            li
+                              i.fa-light.fa-comment
+                              span 1 comments
+                        p
+                          | Discover the tranquil beauty and reconnect with nature in our rooms designed to offer peace and comfort.
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/4.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') The Beauty in the Calm
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span March 10, 2023
+                            li
+                              i.fa-light.fa-comment
+                              span 3 comments
+                        p
+                          | Embrace the calmness and beauty of nature with our well-appointed rooms, offering a perfect retreat from the hustle and bustle.
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/5.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') Garden Family Room
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span September 10, 2023
+                            li
+                              i.fa-light.fa-comment
+                              span 4 comments
+                        p
+                          | Experience the perfect family getaway in our spacious Garden Family Room, blending comfort with the serene beauty of nature.
+                  .post-item
+                    .post-item_wrap
+                      .post-item_media
+                        a(href='/blog-single')
+                          img(src='images/all/6.jpg' alt='')
+                      .post-item_content
+                        h3
+                          a(href='/blog-single') Snowy Mountains Journey
+                        .room-card-details
+                          ul
+                            li
+                              i.fa-light.fa-calendar-days
+                              span August 10, 2023
+                            li
+                              i.fa-light.fa-comment
+                              span 6 comments
+                        p
+                          | Enjoy a cozy stay with stunning mountain views in our Snowy Mountains Journey room, perfect for a winter retreat.
+            .pagination
+              a.prevposts-link(href='#')
+                i.fa.fa-caret-left
+              a(href='#') 1
+              a.current-page(href='#') 2
+              a(href='#') 3
+              a(href='#') 4
+              a.nextposts-link(href='#')
+                i.fa.fa-caret-right
+        .col-lg-4
+          .main-sidebar.fixed-bar
+            .main-sidebar-widget
+              .search-widget
+                form(action='#')
+                  input#se.search-inpt-item(name='se' type='text' placeholder='Search..' value='Search...')
+                  button#submit_btn.search-submit.color-bg
+                    i.fa-light.fa-magnifying-glass
+            .main-sidebar-widget
+              h3 Recent Posts
+              .recent-post-widget
+                ul
+                  li
+                    .recent-post-img
+                      a(href='#')
+                        img(src='images/all/6.jpg' alt='')
+                    .recent-post-content
+                      h4
+                        a(href='#') How to Book a Room online
+                      .recent-post-opt
+                        span.post-date March 10, 2024
+                  li
+                    .recent-post-img
+                      a(href='#')
+                        img(src='images/all/5.jpg' alt='')
+                    .recent-post-content
+                      h4
+                        a(href='#') Snowy Mountains Trip
+                      .recent-post-opt
+                        span.post-date August 10, 2023
+                  li
+                    .recent-post-img
+                      a(href='#')
+                        img(src='images/all/3.jpg' alt='')
+                    .recent-post-content
+                      h4
+                        a(href='#') Traveller on our Hotel
+                      .recent-post-opt
+                        span.post-date September 10, 2023
+            .main-sidebar-widget
+              h3 Recent tags 
+              .tags-widget
+                .tagcloud
+                  a(href='#') Lifestyle
+                  a(href='#') Travel
+                  a(href='#') Trip
+                  a(href='#') Outdoor
+                  a(href='#') Camping
+                  a(href='#') Photos
+                  a(href='#') Adventure
+            .main-sidebar-widget
+              h3 Categories
+              .category-widget
+                ul.cat-item
+                  li
+                    a(href='#') Hotel
+                    span 12
+                  li
+                    a(href='#') Video
+                    span 21
+                  li
+                    a(href='#') Dishes
+                    span 34
+                  li
+                    a(href='#') Travel
+                    span 8
+                  li
+                    a(href='#') Photos
+                    span 9
+            .main-sidebar-widget
+              h3 Social widget
+              .social-widget
+                ul
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-facebook-f
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-x-twitter
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-instagram
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-tiktok
+    .limit-box
+  .content-dec
+    span

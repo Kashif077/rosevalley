@@ -1,0 +1,92 @@
+extends layout2 
+
+block content
+  h1= title
+  .cs-content-container
+    a.cs-logo(href='/')
+      img(src='images/logo3.png' alt='')
+    .cs-content-wrapper
+      h3 Under Construction
+      h2 Our new offers are  Coming Soon
+      .cs-subcribe-form.subcribe-form.fl-wrap
+        form#subscribe.fl-wrap
+          input#subscribe-email.enteremail(name='email' placeholder='Your Email' spellcheck='false' type='text')
+          button#subscribe-button.subscribe-button.color-bg(type='submit') Send 
+          label.subscribe-message(for='subscribe-email')
+      .clearfix
+      .bold-separator
+        span
+      .clearfix
+      .cs-social
+        ul
+          li
+            a(href='#' target='_blank')
+              i.fa-brands.fa-facebook-f
+          li
+            a(href='#' target='_blank')
+              i.fa-brands.fa-x-twitter
+          li
+            a(href='#' target='_blank')
+              i.fa-brands.fa-instagram
+          li
+            a(href='#' target='_blank')
+              i.fa-brands.fa-tiktok
+    .map-dec2
+    .footer-separator-wrap.cs-footer_separator
+      .footer-separator
+        span
+  .cs-media
+    .hero_promo-wrap
+      .hero_promo-button
+        a.image-popup(href='https://vimeo.com/10322316')
+          i.fas.fa-play
+      .hero_promo-title
+        h4 View Promo Video
+    .cs-media-container.counter-widget.fl-wrap(data-countdate='09/12/2026')
+      .countdown
+        .cs-countdown-item
+          span.days.rot 00
+          p Days
+        .cs-countdown-item
+          span.hours.rot 00
+          p Hours 
+        .cs-countdown-item
+          span.minutes.rot2 00
+          p Minutes 
+        .cs-countdown-item.no-dec
+          span.seconds.rot2 00
+          p Seconds
+    .cs-contacts
+      .section-separator
+        span
+          i.fa-thin.fa-gem
+      ul
+        li
+          span Call :
+          a(href='#') +92 3345555866
+        li
+          span Write  :
+          a(href='#') yourmail@domain.com
+        li
+          span Find us : 
+          a(href='https://maps.app.goo.gl/wAuS6HbbLBrZC8sW6') Rose VALLEY Hotel Naran
+    .bg-wrap
+      .fs-wrapper.slideshow-container_wrap
+        .multi-slideshow_fs.ms-container.fl-wrap.full-height
+          .swiper-container.full-height
+            .swiper-wrapper
+              .swiper-slide
+                .ms-item_fs.full-height.fl-wrap
+                  .bg(data-bg='images/bg/15.jpg')
+              .swiper-slide
+                .ms-item_fs.full-height.fl-wrap
+                  .bg(data-bg='images/bg/17.jpg')
+              .swiper-slide
+                .ms-item_fs.full-height.fl-wrap
+                  .bg(data-bg='images/bg/22.jpg')
+        .overlay
+      .dec-corner.dc_lb
+      .dec-corner.dc_rb
+      .dec-corner.dc_rt
+      .dec-corner.dc_lt
+    a.cs-reserv_btn(href='#') Book a Room

@@ -1,0 +1,325 @@
+extends layout
+
+block content
+  h1= title
+  .header-overlay.close_cart-init
+  .content-section.parallax-section.hero-section.htc_single_item
+    .fs-wrapper.slideshow-container_wrap.htc_single_item_dec
+      .multi-slideshow_fs.ms-container.fl-wrap.full-height
+        .swiper-container.full-height
+          .swiper-wrapper
+            .swiper-slide
+              .ms-item_fs.full-height.fl-wrap
+                .bg(data-bg='images/bg/1.jpg')
+            .swiper-slide
+              .ms-item_fs.full-height.fl-wrap
+                .bg(data-bg='images/bg/2.jpg')
+            .swiper-slide
+              .ms-item_fs.full-height.fl-wrap
+                .bg(data-bg='images/bg/3.jpg')
+      .overlay
+      .dec-corner.dc_lb
+      .dec-corner.dc_rb
+      .dec-corner.dc_rt
+      .dec-corner.dc_lt
+    .container
+      .hero-title-container.htc_single
+        .section-title
+          h4 Enjoy your time in our Hotel with pleasure.
+          h2
+            | Welcome to The ROSE 
+            br
+            | Premium Hotel
+          .section-separator
+            span
+              i.fa-thin.fa-gem
+    .container.small-container
+      .fw-search-wrap_hero
+        .fw-search-wrap
+          form.custom-form(action='https://diamant.kwst.net/' name='searchform')
+            fieldset
+              .row
+                .col-lg-4
+                  .date-container.input-wrap
+                    label Date:
+                    input#res_date(type='text' name='resdate' value='')
+                .col-lg-3
+                  .quantity
+                    .quantity_title Rooms: 
+                    .quantity-item
+                      input.minus(type='button' value='-')
+                      input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                      input.plus(type='button' value='+')
+                .col-lg-3
+                  .quantity
+                    .quantity_title Guests: 
+                    .quantity-item
+                      input.minus(type='button' value='-')
+                      input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                      input.plus(type='button' value='+')
+                .col-lg-2
+                  button#searchform-submit.searchform-submit Search Room
+    .hero-section-scroll
+      .mousey
+        .scroller
+    .tcs-pagination_wrap
+      .svg-corner.svg-corner_white(style='bottom:0;right:-38px; transform: rotate(90deg)')
+      .svg-corner.svg-corner_white(style='bottom:0;left:-38px; transform: rotate(0deg)')
+      .tcs-pagination.hero-slider-pag
+    .hero-call-wrap
+      i.fa-thin.fa-phone-rotary
+      a(href='#') +92 3345555866
+    .slide-progress_container
+      .slide-progress-wrap
+        .slide-progress
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      span Home Slider
+  #sec2.content-section
+    .section-dec
+    .container
+      .row
+        .col-lg-6
+          .section-title.text-align_left(style='margin-top: 50px;')
+            h4 Enjoy your time in our Hotel
+            h2 About Our Hotel
+          .text-block.tb-sin
+            p.has-drop-cap
+              | The Rose Valley Hotel, every detail is crafted to provide a luxurious and serene experience. Our impeccable service and elegant surroundings promise a stay that you&apos;ll cherish forever. Nestled amidst scenic beauty, our hotel combines modern amenities with classic charm.
+              | From the moment you arrive, you are greeted with warmth and hospitality, ensuring that your stay is nothing short of perfection. Our rooms and suites are designed with comfort and style in mind, offering a tranquil retreat after a day of exploration or business meetings.
+              | Indulge in our gourmet dining options, where our chefs prepare exquisite dishes that tantalize your taste buds. Whether you&apos;re enjoying a casual meal or a fine dining experience, the culinary delights at Rose Valley Hotel are sure to impress.
+              | Our state-of-the-art facilities cater to all your needs, whether you are here for a relaxing getaway, a corporate event, or a special celebration. Enjoy our luxurious spa, take a dip in our pristine pool, or explore the local attractions with ease.
+            p
+              | Nestled in the heart of nature, Rose Valley Hotel stands as a beacon of elegance and tranquility. Every corner of our establishment is designed to offer you an unforgettable stay, blending luxury with the serene beauty of our surroundings.
+              | From the moment you step into our grand lobby, you&rsquo;ll be embraced by an atmosphere of sophistication and warmth. Our dedicated staff is committed to providing exceptional service, ensuring your stay is as comfortable and memorable as possible.
+              | Our beautifully appointed rooms and suites offer a sanctuary of comfort and style, with each space thoughtfully designed to cater to your needs. Whether you&apos;re unwinding after a day of sightseeing or preparing for a business meeting, you&apos;ll find everything you need right at your fingertips
+            a.btn.fl-btn(href='/about') Read more About Us
+            .dc_dec-item_left
+              span
+        .col-lg-6
+          .hero-image-collge-wrap
+            .single-dec_img
+              img.respimg(src='images/all/11.jpg' alt='')
+            .hero_images-collage-item(style='width: 25%; bottom:  25px; z-index: 15; left: -70px;')
+              img.respimg(src='images/all/12.jpg' alt='')
+            .hero_images-collage-item(style='width: 45%; top: -5%; z-index: 11; right: -120px;')
+              img.respimg(src='images/all/7.jpg' alt='')
+            .dc_dec-item_right
+              span
+      .sc-dec(style='left: -220px; bottom: -100px;')
+    .content-dec2.fs-wrapper
+    .content-dec
+      span
+  .content-section.dark-bg.no-padding.hidden-content
+    .row
+      .st-gallery
+        .section-title
+          h4 Special selection
+          h2 Popular Rooms And Suites
+          .section-separator.sect_se_transparent
+            span
+              i.fa-thin.fa-gem
+          a.stg_link(href='/rooms') View All Rooms
+        .map-dec2
+        .footer-separator.fs_sin
+          span
+      .col-lg-3   
+      .col-lg-9
+        .rooms-carousel-wrap
+          .rooms-carousel.full-height
+            .swiper-container
+              .swiper-wrapper
+                // rooms-carousel-item
+                .swiper-slide
+                  .rooms-carousel-item.full-height
+                    .bg-wrap.bg-parallax-wrap-gradien.fs-wrapper
+                      .bg(data-bg='images/room/1.jpg' data-swiper-parallax='10%')
+                    .rooms-carousel-item_container
+                      h3
+                        a(href='/room-single') Garden Family Room
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.
+                      .room-card-details
+                        ul
+                          li
+                            i.fa-light.fa-user
+                            span 2 Guest
+                          li
+                            i.fa-light.fa-bed-front
+                            span 1 Bed
+                          li
+                            i.fa-light.fa-bath
+                            span 1 Bath
+                        .grid-item_price
+                          span $129/Night
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                .swiper-slide
+                  .rooms-carousel-item.full-height
+                    .bg-wrap.bg-parallax-wrap-gradien.fs-wrapper
+                      .bg(data-bg='images/room/2.jpg' data-swiper-parallax='10%')
+                    .rooms-carousel-item_container
+                      h3
+                        a(href='/room-single') Premium Panorama Room
+                      p
+                        | Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.
+                      .room-card-details
+                        ul
+                          li
+                            i.fa-light.fa-user
+                            span 4 Guest
+                          li
+                            i.fa-light.fa-bed-front
+                            span 2 Bed
+                          li
+                            i.fa-light.fa-bath
+                            span 2 Bath
+                        .grid-item_price
+                          span $230/Night
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                .swiper-slide
+                  .rooms-carousel-item.full-height
+                    .bg-wrap.bg-parallax-wrap-gradien.fs-wrapper
+                      .bg(data-bg='images/room/3.jpg' data-swiper-parallax='10%')
+                    .rooms-carousel-item_container
+                      h3
+                        a(href='/room-single') Presidential Suite
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.
+                      .room-card-details
+                        ul
+                          li
+                            i.fa-light.fa-user
+                            span 2 Guest
+                          li
+                            i.fa-light.fa-bed-front
+                            span 1 Bed
+                          li
+                            i.fa-light.fa-bath
+                            span 1 Bath
+                        .grid-item_price
+                          span $543/Night
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                .swiper-slide
+                  .rooms-carousel-item.full-height
+                    .bg-wrap.bg-parallax-wrap-gradien.fs-wrapper
+                      .bg(data-bg='images/room/4.jpg' data-swiper-parallax='10%')
+                    .rooms-carousel-item_container
+                      h3
+                        a(href='/room-single') Beach Villa Room
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.
+                      .room-card-details
+                        ul
+                          li
+                            i.fa-light.fa-user
+                            span 3 Guest
+                          li
+                            i.fa-light.fa-bed-front
+                            span 2 Bed
+                          li
+                            i.fa-light.fa-bath
+                            span 1 Bath
+                        .grid-item_price
+                          span $321/Night
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+          .rc-controls-wrap
+            .rc-button.rc-button-prev
+              i.fa-solid.fa-caret-left
+            .rc-button.rc-button-next
+              i.fa-solid.fa-caret-right
+          .sc-controls.fwc_pag2
+            .ss-slider-pagination
+  .content-section
+    .container
+      .section-title
+        h4 Enjoy your time in our Hotel with pleasure.
+        h2 Hotels Extra Services
+        .section-separator
+          span
+            i.fa-thin.fa-gem
+      .cards-wrap
+        .row
+          .col-lg-4
+            .content-inner.fl-wrap
+              .content-front
+                .cf-inner
+                  .fs-wrapper
+                    .bg(data-bg='images/services/1.jpg')
+                    .overlay.overlay-bold
+                  .inner
+                    h2 Clean And clear 
+                    h4 Start Relax better
+                    .section-separator
+                      span
+                        i.fa-thin.fa-gem
+                  .serv-num 01.
+              .content-back
+                .cf-inner
+                  .inner
+                    .dec-icon
+                      i.fa-light.fa-spa
+                    p
+                      | Relax and refresh in our pristine bathrooms, featuring contemporary fixtures, spacious layouts, and an ambiance of luxury
+          .col-lg-4
+            .content-inner.fl-wrap
+              .content-front
+                .cf-inner
+                  .fs-wrapper
+                    .bg(data-bg='images/services/2.jpg')
+                    .overlay.overlay-bold
+                  .inner
+                    h2 Indoor Swimming Pool
+                    h4 Quality is the heart
+                    .section-separator
+                      span
+                        i.fa-thin.fa-gem
+                  .serv-num 02.
+              .content-back
+                .cf-inner
+                  .inner
+                    .dec-icon
+                      i.fa-thin.fa-water-ladder
+                    p Use Clean Water to feel batter
+          .col-lg-4
+            .content-inner.fl-wrap
+              .content-front
+                .cf-inner
+                  .fs-wrapper
+                    .bg(data-bg='images/services/3.jpg')
+                    .overlay.overlay-bold
+                  .inner
+                    h2 The Restaurant Center
+                    h4 Hot &amp; ready to serve
+                    .section-separator
+                      span
+                        i.fa-thin.fa-gem
+                  .serv-num 03.
+              .content-back
+                .cf-inner
+                  .inner
+                    .dec-icon
+                      i.fa-thin.fa-pot-food
+                    p
+                      | Modern and fully equipped, our kitchen is the heart of your home away from home. Enjoy preparing meals with state-of-the-art appliances and a beautiful view to inspire your culinary creations.
+        .dc_dec-item_left
+          span
+        .dc_dec-item_right
+          span
+      a.dwonload_btn(href='/contact') Get In touch With Us
+      .sc-dec(style='left: -220px; bottom: -100px;')
+      .sc-dec2(style='right: -220px; top: -100px;')
+    .content-dec2.fs-wrapper
+    .content-dec
+      span
+  .content-dec
+    span

@@ -1,0 +1,215 @@
+extends layout
+
+block content
+  h1= title
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/1.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+      .section-title
+        h4 Enjoy your time in our Hotel with pleasure.
+        h2 Rooms And Suites
+      .section-separator
+        span
+        i.fa-thin.fa-gem 
+    .hero-section-scroll
+      .mousey
+      .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span Rooms And Suites
+  .content-section
+    .section-dec
+    .container.small-container
+      .fw-search-wrap
+        form.custom-form(action='https://diamant.kwst.net/' name='searchform')
+          fieldset
+            .row
+              .col-lg-4
+                .date-container.input-wrap
+                  label Date:
+                  input#res_date(type='text' name='resdate' value='')
+              .col-lg-3
+                .quantity
+                  .quantity_title Rooms: 
+                  .quantity-item
+                    input.minus(type='button' value='-')
+                    input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                    input.plus(type='button' value='+')
+              .col-lg-3
+                .quantity
+                  .quantity_title Guests: 
+                  .quantity-item
+                    input.minus(type='button' value='-')
+                    input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                    input.plus(type='button' value='+')
+              .col-lg-2
+                button#searchform-submit.searchform-submit Search Room
+    .container
+      .dec-container
+        .dc_dec-item_left
+          span
+        .dc_dec-item_right
+          span
+        .text-block
+          // gallery start
+          .gallery-items.two-column.fw-gi2-column.grid-big-pad.lightgallery
+            // gallery-item
+            .gallery-item
+              .grid-item-holder.hov_zoom
+                img(src='images/room/1.jpg' alt='')
+                a.box-media-zoom.single-popup-image(href='images/room/1.jpg')
+                  i.fa-light.fa-magnifying-glass
+                .like-btn
+                  i.fa-light.fa-heart
+                  span Add to Wishlist
+              .grid-item-details
+                h3
+                  a(href='/room-single') Deluxe Double Room
+                p Experience the comfort of our Deluxe Double Room, featuring modern amenities and a cozy atmosphere.
+                .room-card-details
+                  ul
+                    li
+                      i.fa-light.fa-user
+                      span 2 Guests
+                    li
+                      i.fa-light.fa-bed-front
+                      span 1 Bed
+                    li
+                      i.fa-light.fa-bath
+                      span 1 Bath
+                .grid-item_price
+                  span $129/Night
+                a.gid_link(href='/room-single')
+                  span View Details
+                  i.fa-light.fa-arrow-right-long
+            .gallery-item
+              .grid-item-holder.hov_zoom
+                img(src='images/room/2.jpg' alt='')
+                a.box-media-zoom.single-popup-image(href='images/room/2.jpg')
+                  i.fa-light.fa-magnifying-glass
+                .like-btn
+                  i.fa-light.fa-heart
+                  span Add to Wishlist
+              .grid-item-details
+                h3
+                  a(href='/room-single') Deluxe Family Room
+                p Perfect for families, our Deluxe Family Room offers spacious accommodation with all the necessary comforts.
+                .room-card-details
+                  ul
+                    li
+                      i.fa-light.fa-user
+                      span 4 Guests
+                    li
+                      i.fa-light.fa-bed-front
+                      span 2 Beds
+                    li
+                      i.fa-light.fa-bath
+                      span 2 Baths
+                .grid-item_price
+                  span $230/Night
+                a.gid_link(href='/room-single')
+                  span View Details
+                  i.fa-light.fa-arrow-right-long
+            .gallery-item
+              .grid-item-holder.hov_zoom
+                img(src='images/room/3.jpg' alt='')
+                a.box-media-zoom.single-popup-image(href='images/room/3.jpg')
+                  i.fa-light.fa-magnifying-glass
+                .like-btn
+                  i.fa-light.fa-heart
+                  span Add to Wishlist
+              .grid-item-details
+                h3
+                  a(href='/room-single') Deluxe Suite
+                p Indulge in luxury in our Deluxe Suite, featuring elegant decor and top-notch amenities for a memorable stay.
+                .room-card-details
+                  ul
+                    li
+                      i.fa-light.fa-user
+                      span 2 Guests
+                    li
+                      i.fa-light.fa-bed-front
+                      span 1 Bed
+                    li
+                      i.fa-light.fa-bath
+                      span 1 Bath
+                .grid-item_price
+                  span $321/Night
+                a.gid_link(href='/room-single')
+                  span View Details
+                  i.fa-light.fa-arrow-right-long
+            .gallery-item
+              .grid-item-holder.hov_zoom
+                img(src='images/room/4.jpg' alt='')
+                a.box-media-zoom.single-popup-image(href='images/room/4.jpg')
+                  i.fa-light.fa-magnifying-glass
+                .like-btn
+                  i.fa-light.fa-heart
+                  span Add to Wishlist
+              .grid-item-details
+                h3
+                  a(href='/room-single') Deluxe Triple Room
+                p Enjoy the perfect blend of comfort and space in our Deluxe Triple Room, ideal for groups or families.
+                .room-card-details
+                  ul
+                    li
+                      i.fa-light.fa-user
+                      span 3 Guests
+                    li
+                      i.fa-light.fa-bed-front
+                      span 2 Beds
+                    li
+                      i.fa-light.fa-bath
+                      span 1 Bath
+                .grid-item_price
+                  span $84/Night
+                a.gid_link(href='/room-single')
+                  span View Details
+                  i.fa-light.fa-arrow-right-long
+            .gallery-item
+              .grid-item-holder.hov_zoom
+                img(src='images/room/5.jpg' alt='')
+                a.box-media-zoom.single-popup-image(href='images/room/5.jpg')
+                  i.fa-light.fa-magnifying-glass
+                .like-btn
+                  i.fa-light.fa-heart
+                  span Add to Wishlist
+              .grid-item-details
+                h3
+                  a(href='/room-single') Family Room
+                p Our Family Room offers a comfortable and convenient space for families to relax and enjoy their stay.
+                .room-card-details
+                  ul
+                    li
+                      i.fa-light.fa-user
+                      span 4 Guests
+                    li
+                      i.fa-light.fa-bed-front
+                      span 2 Beds
+                    li
+                      i.fa-light.fa-bath
+                      span 2 Baths
+                .grid-item_price
+                  span $543/Night
+                a.gid_link(href='/room-single')
+                  span View Details
+                  i.fa-light.fa-arrow-right-long
+      .pagination
+        a.prevposts-link(href='#')
+          i.fa.fa-caret-left
+        a(href='#') 1
+        a.current-page(href='#') 2
+        a(href='#') 3
+        a(href='#') 4
+        a.nextposts-link(href='#')
+          i.fa.fa-caret-right
+  .content-dec
+    span

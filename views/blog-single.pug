@@ -1,0 +1,190 @@
+extends layout
+
+block content
+  h1= title
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/6.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+        .section-title
+          h4 Enjoy your time in our Hotel with pleasure.
+          h2 How to Book a Room online
+        .section-separator
+            span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+        .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span Rooms And Suites
+  .content-section
+    .section-dec
+    .content-dec2.fs-wrapper
+    .container
+      .row
+        .col-lg-8
+          .post-container
+            .dec-container
+              .text-block
+                .blog-media
+                  .single-slider-wrap
+                    .single-slider
+                      .swiper-container
+                        .swiper-wrapper.lightgallery
+                          .swiper-slide.hov_zoom
+                            img(src='images/all/2.jpg' alt='')
+                            a.box-media-zoom.popup-image(href='images/all/2.jpg')
+                              i.fal.fa-search
+                          .swiper-slide.hov_zoom
+                            img(src='images/all/1.jpg' alt='')
+                            a.box-media-zoom.popup-image(href='images/all/1.jpg')
+                              i.fal.fa-search
+                          .swiper-slide.hov_zoom
+                            img(src='images/all/3.jpg' alt='')
+                            a.box-media-zoom.popup-image(href='images/all/3.jpg')
+                              i.fal.fa-search
+                    .fw-carousel-button-prev.slider-button
+                      i.fa-solid.fa-caret-left
+                    .fw-carousel-button-next.slider-button
+                      i.fa-solid.fa-caret-right
+                    .sc-controls.fwc_pag
+                      .ss-slider-pagination
+                .text-block.post-single_tb
+                  .text-block-container
+                    .tbc_subtitle Where Comfort Meets Style
+                    .room-card-details(style='margin-bottom: 20px')
+                      ul
+                        li
+                          i.fa-light.fa-calendar-days
+                          span August 10, 2023
+                        li
+                          i.fa-light.fa-comment
+                          span 2 comments
+                    p.has-drop-cap
+                      | Welcome to our hotel, where each room is designed to provide you with a serene and picturesque retreat. Perfect for relaxation and rejuvenation, our rooms offer stunning views of the valley, creating a tranquil atmosphere for your stay.
+                      | Living Room: &quot;Experience comfort and elegance with ample seating, tastefully decorated interiors, and panoramic valley views. A perfect spot for relaxation and gathering.&quot;
+                      | Bedroom: &quot;Your personal sanctuary with plush bedding, clean and cozy decor, and large windows overlooking the serene valley. Wake up to breathtaking views every morning.&quot;
+                    p
+                      | Each room in our hotel is meticulously maintained to ensure the highest standards of cleanliness and comfort. Our attention to detail and commitment to providing a beautiful, serene environment will make your stay truly memorable. Enjoy the seamless blend of modern amenities and natural beauty in every corner of your room.
+                    .post-img-row
+                      .post-img-row_item
+                        img.respimg(src='images/all/5.jpg' alt='')
+                      .post-img-row_item
+                        img.respimg(src='images/all/6.jpg' alt='')
+                  .tbc-separator
+                  .tagcloud.tc_single
+                    span.tc_single_title Post Tags:
+                    a(href='#') Lifystyle
+                    a(href='#') Travel
+                    a(href='#') Trip
+                    a(href='#') Outdoor
+            .content-nav-fixed.dark-bg.scale_anim
+              ul
+                li
+                  a.ln(href='/blog-single')
+                    i.fal.fa-long-arrow-left
+                    span
+                      | Prev 
+                      strong - Post Title
+                  .content-nav_mediatooltip.cnmd_leftside
+                    .overlay
+                    .bg(data-bg='images/all/1.jpg')
+                li
+                  a.rn(href='/blog-single')
+                    span
+                      | Next 
+                      strong - Post Title
+                    i.fal.fa-long-arrow-right
+                  .content-nav_mediatooltip.cnmd_rightside
+                    .overlay
+                    .bg(data-bg='images/all/3.jpg')
+        .col-lg-4
+          .main-sidebar.fixed-bar
+            .main-sidebar-widget
+              .search-widget
+                form(action='#')
+                  input#se.search-inpt-item(name='se' type='text' placeholder='Search..' value='Search...')
+                  button#submit_btn.search-submit.color-bg
+                    i.fa-light.fa-magnifying-glass
+            .main-sidebar-widget
+              h3 Recent Posts
+              .recent-post-widget
+                ul
+                  li
+                    .recent-post-img
+                      a(href='#')
+                        img(src='images/all/6.jpg' alt='')
+                    .recent-post-content
+                      h4
+                        a(href='#') How to Book a Room online
+                      .recent-post-opt
+                        span.post-date March 10, 2024
+                  li
+                    .recent-post-img
+                      a(href='#')
+                        img(src='images/all/5.jpg' alt='')
+                    .recent-post-content
+                      h4
+                        a(href='#') Eat Your food with joy
+                      .recent-post-opt
+                        span.post-date August 10, 2023
+            .main-sidebar-widget
+              h3 Resent tags 
+              .tags-widget
+                .tagcloud
+                  a(href='#') Lifystyle
+                  a(href='#') Travel
+                  a(href='#') Trip
+                  a(href='#') Outdoor
+                  a(href='#') Camping
+                  a(href='#') Photos
+                  a(href='#') Adventure
+            .main-sidebar-widget
+              h3 Categories
+              .category-widget
+                ul.cat-item
+                  li
+                    a(href='#') Hotel
+                    span 12
+                  li
+                    a(href='#') Video
+                    span 21
+                  li
+                    a(href='#') Dishes
+                    span 34
+                  li
+                    a(href='#') Travel
+                    span 8
+                  li
+                    a(href='#') Photos
+                    span 9
+            .main-sidebar-widget
+              h3 Social widget
+              .social-widget
+                ul
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-facebook-f
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-x-twitter
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-instagram
+                  li
+                    a(href='#' target='_blank')
+                      i.fa-brands.fa-tiktok
+    .limit-box
+  .content-dec
+    span
+
+
+  

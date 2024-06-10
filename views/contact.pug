@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  h1= title
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/7.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+        .section-title
+          h4 Enjoy your time in our Hotel with pleasure.
+          h2 Our Contacts
+        .section-separator
+            span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+        .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+
+
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span Contacts
+  .content-section
+    .section-dec
+    .content-dec2.fs-wrapper
+    .container
+      .contacts-cards-wrap
+        .dec-container
+          .text-block
+            .row
+              .col-lg-4
+                .contacts-card-item
+                  i.fa-light.fa-location-dot
+                  span Our Location
+                  p You can find Us Here
+                  a(href='https://maps.app.goo.gl/wAuS6HbbLBrZC8sW6') Rose valley Hotel
+              .col-lg-4
+                .contacts-card-item
+                  i.fa-light.fa-phone-rotary
+                  span Our   Phone
+                  p Here is Our Contact Number
+                  a(href='#') +92 3345555866 
+              .col-lg-4
+                .contacts-card-item
+                  i.fa-light.fa-mailbox
+                  span Our Mail
+                  p please mail us here 
+                  a(href='#') yourmail@domain.com
+      .row
+        .col-lg-6
+          .dec-container
+            .text-block
+              .text-block
+                .tbc_subtitle Get In Touch
+                .tbc-separator
+                .contactform-wrap
+                  form#contactform.comment-form(action='https://diamant.kwst.net/site/php/contact.php' name='contactform')
+                    fieldset
+                      #message
+                      .row
+                        .col-sm-6
+                          input#name(type='text' name='name' placeholder='Your Name *' value='')
+                        .col-sm-6
+                          input#email(type='text' name='email' placeholder='Email Address *' value='')
+                      textarea#comments(name='comments' cols='40' rows='3' placeholder='Your Message:')
+                      button#submit_cnt.commentssubmit Send Message  
+        .col-lg-6
+          .map-container.mapC_vis
+            #singleMap.fs-wrapper(data-latitude='40.7427837' data-longitude='-73.11445617')
+            .scrollContorl
+      .dc_dec-item_left
+        span
+      .dc_dec-item_right
+        span
+  .content-dec
+    span
+
+  

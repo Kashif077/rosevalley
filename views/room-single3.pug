@@ -1,0 +1,246 @@
+extends layout
+
+block content
+  h1= title
+  .header-overlay.close_cart-init
+
+  .content-section.parallax-section.hero-section.hidden-section
+    .media-container.video-holder-wrap
+        .video-container
+        video.bgvid(playsinline='' autoplay='' loop='' muted='')
+            source(src='video/1.mp4' type='video/mp4')
+        .overlay
+    .overlay
+    .container
+        .section-title
+            h4 Enjoy your time in our Hotel with pleasure.
+            h2 Garden Family Room
+        .section-separator
+            span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+        .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Rooms
+      span Room single
+  .content-section
+    .section-dec
+    .content-dec2.fs-wrapper
+    .container
+      .row
+        .col-lg-8
+          .dec-container
+            .dc_dec-item_left
+              span
+            .text-block
+              .text-block-title
+                h4 About Accommodation
+                .sr-opt
+                  .sa-price $129/Night
+                  .sa_towishlist Add to Wishlist
+              .room-card-details.rcd-single
+                ul
+                  li
+                    i.fa-light.fa-crop
+                    span 44m2
+                  li
+                    i.fa-light.fa-user
+                    span 4 Guests
+                  li
+                    i.fa-light.fa-bed-front
+                    span 2 Beds
+                  li
+                    i.fa-light.fa-bath
+                    span 2 Baths
+              .text-block-container
+                p.has-drop-cap
+                  | The Garden Family Room at Hotel Rose Valley offers an ideal retreat for families looking to unwind in comfort. With a spacious area of 44 square meters, this room provides ample space for relaxation and family bonding. The room features modern amenities designed to enhance your stay, including high-speed Wi-Fi, a flat-screen TV, and a cozy seating area by the panoramic window that offers stunning garden views.
+                p
+                  | Each room is meticulously designed with elegant furnishings and soft color palettes that create a warm and inviting atmosphere. The Garden Family Room includes a private balcony, perfect for enjoying morning coffee or an evening sunset. The bathroom is equipped with a rain shower, providing a refreshing experience after a day of exploring.
+                p
+                  | Our guests appreciate the thoughtful details such as the in-room coffee and tea service station, a writing desk with USB ports for convenience, and plush bedding for a restful night’s sleep. Whether you’re here for a weekend getaway or an extended stay, the Garden Family Room ensures you have everything you need for a memorable visit.
+              .tbc-separator
+              .tbc_subtitle Gallery of Elegance  
+              .gallery-items.spad.list-single-gallery.three-coulms.lightgallery
+                .gallery-item
+                  .grid-item-holder
+                    img(src='images/room/1.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/1.jpg')
+                      i.fa.fa-search
+                .gallery-item
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/2.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/2.jpg')
+                      i.fa.fa-search
+                .gallery-item.gallery-item-second
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/3.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/3.jpg')
+                      i.fa.fa-search
+                .gallery-item
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/4.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/4.jpg')
+                      i.fa.fa-search
+                .gallery-item
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/5.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/5.jpg')
+                      i.fa.fa-search
+                .gallery-item
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/6.jpg' alt='')
+                    a.box-media-zoom.popup-image(href='images/room/6.jpg')
+                      i.fa.fa-search
+              .tbc-separator
+              .tbc_subtitle Room Amenities  
+              .meg_aminites
+                .row
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-water-ladder
+                      span Free Swimming Pool
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-baby-carriage
+                      span Extra Baby Bed
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-dryer
+                      span Washing Machine
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-wifi
+                      span Free Wi-Fi
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-air-conditioner
+                      span Air Conditioned
+                  .col-lg-4
+                    .meg_aminites_item
+                      i.fa-light.fa-refrigerator
+                      span In-room Refrigerator
+              .tbc-separator
+              .row
+                .col-lg-6
+                  .tbc_subtitle What included in this suite?
+                  .text-block_list
+                    ul
+                      li Upholstered seat beside the panoramic window
+                      li Bathroom with rain shower
+                      li Private balcony
+                      li Service station with coffee machine and tea
+                      li Upholstered seat beside the panoramic window
+                      li TV-UHD screen for watching
+                      li Writing desk with USB ports
+                .col-lg-6
+                  .tbc_subtitle Room Video Presentation
+                  .video-box
+                    img.respimg(src='images/room/2.jpg' alt='')
+                    .overlay
+                    #html5-videos.video-box-btn.image-popup.color-bg(data-html='#video1')
+                      i.fas.fa-play
+                  #video1.popup_video(style='display:none;' data-videolink='video/1.mp4')
+                    video.lg-video-object.lg-html5(controls='' preload='none')
+                      source(src='https://diamant.kwst.net/' type='video/mp4')
+              .tbc-separator
+        .col-lg-4
+          .fix-bar-init
+            .fw-search-wrap
+              .fw-search-wrap-title Book This Suite
+              .section-separator
+                span
+                  i.fa-thin.fa-gem
+              form.custom-form(action='https://diamant.kwst.net/' name='bookform')
+                fieldset
+                  .input-wrap
+                    label Your Name:
+                    input(type='text' placeholder='Your Name *' value='')
+                  .input-wrap
+                    label Phone:
+                    input(type='text' placeholder='Your Phone' value='')
+                  .date-container.input-wrap
+                    label Date:
+                    input#res_date(type='text' name='resdate' value='')
+                  .quantity.input-wrap
+                    .quantity_title Guests: 
+                    .quantity-item
+                      input.minus(type='button' value='-')
+                      input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                      input.plus(type='button' value='+')
+                  button.searchform-submit.bs_btn Book Your Stay
+      .limit-box
+      .post-related
+        .post-related_title
+          h6 Similar Rooms
+          .section-separator
+            span
+              i.fa-thin.fa-gem
+        .row
+          .item-related.col-lg-4
+            a.item-related_img(href='/room-single')
+              img.respimg(src='images/room/3.jpg' alt='')
+              .overlay
+              span View Details
+            h3
+              a(href='/room-single') Premium Panorama Room
+            span.post-date.post-price $230/Night
+            .room-card-details
+              ul
+                li
+                  i.fa-light.fa-user
+                  span 1 Guest
+                li
+                  i.fa-light.fa-bed-front
+                  span 1 Bed
+                li
+                  i.fa-light.fa-bath
+                  span 1 Bath
+          .item-related.col-lg-4
+            a.item-related_img(href='/room-single')
+              img.respimg(src='images/room/4.jpg' alt='')
+              .overlay
+              span View Details
+            h3
+              a(href='/room-single') Beach Villa Room
+            span.post-date.post-price $321/Night
+            .room-card-details
+              ul
+                li
+                  i.fa-light.fa-user
+                  span 1 Guest
+                li
+                  i.fa-light.fa-bed-front
+                  span 1 Bed
+                li
+                  i.fa-light.fa-bath
+                  span 1 Bath
+          .item-related.col-lg-4
+            a.item-related_img(href='/room-single')
+              img.respimg(src='images/room/5.jpg' alt='')
+              .overlay
+              span View Details
+            h3
+              a(href='/room-single') Superior Panorama Room
+            span.post-date.post-price $143/Night
+            .room-card-details
+              ul
+                li
+                  i.fa-light.fa-user
+                  span 1 Guest
+                li
+                  i.fa-light.fa-bed-front
+                  span 1 Bed
+                li
+                  i.fa-light.fa-bath
+                  span 1 Bath
+  .content-dec
+    span

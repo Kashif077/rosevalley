@@ -1,0 +1,266 @@
+extends layout
+
+block content
+  h1= title
+  
+  .header-overlay.close_cart-init
+  .content-section.parallax-section.hero-section.hidden-section(data-scrollax-parent='true')
+    .bg.par-elem(data-bg='images/bg/3.jpg' data-scrollax="properties: { translateY: '30%' }")
+    .overlay
+    .container
+        .section-title
+            h4 Enjoy your time in our Hotel with pleasure.
+            h2 Rooms And Suites 2
+        .section-separator
+            span
+            i.fa-thin.fa-gem
+    .hero-section-scroll
+        .mousey
+        .scroller
+    .dec-corner.dc_lb
+    .dec-corner.dc_rb
+    .dec-corner.dc_rt
+    .dec-corner.dc_lt
+  .content
+  .breadcrumbs-wrap
+    .container
+      a(href='#') Home
+      a(href='#') Pages
+      span Rooms And Suites 2
+  .content-section
+    .section-dec
+    .container
+      .row
+        .col-lg-4
+          .fix-bar-init
+            .fw-search-wrap
+              .fw-search-wrap-title Search Filters
+              .section-separator
+                span
+                  i.fa-thin.fa-gem
+              form.custom-form(action='https://diamant.kwst.net/' name='searchform')
+                fieldset
+                  .row
+                    .col-lg-12
+                      .date-container.input-wrap
+                        label Date:
+                        input#res_date(type='text' name='resdate' value='')
+                    .col-lg-12
+                      .quantity.input-wrap
+                        .quantity_title Rooms: 
+                        .quantity-item
+                          input.minus(type='button' value='-')
+                          input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                          input.plus(type='button' value='+')
+                    .col-lg-12
+                      .quantity.input-wrap
+                        .quantity_title Guests: 
+                        .quantity-item
+                          input.minus(type='button' value='-')
+                          input.qty.color-bg(type='text' name='quantity' title='Qty' data-min='1' data-max='10' data-step='1' value='1')
+                          input.plus(type='button' value='+')
+                    .col-lg-12
+                      button#searchform-submit.searchform-submit Search Room
+        .col-lg-8
+          .shop-header
+            h4
+              | Showing 
+              span 1 - 6
+              |  of 19 results
+            .shop-header_opt
+              select#list.chosen-select.no-search-select(name='persons' data-placeholder='Persons')
+                option Popularity
+                option Average rating
+                option Price: low to high
+                option Price: high to low
+          .dec-container
+            .dc_dec-item_right
+              span
+            .text-block
+              .gallery-items.grid-big-pad.two-column.lightgallery
+                .gallery-item.desserts
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/1.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/1.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single') Deluxe Double Room
+                    p
+                      | Experience the ultimate comfort in our Deluxe Double Room, perfect for couples seeking a relaxing stay.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 2 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 1 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 1 Bath
+                    .grid-item_price
+                      span $129/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+                .gallery-item.seafood
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/2.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/2.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single') Deluxe Family Room
+                    p
+                      | Enjoy quality family time in our spacious Deluxe Family Room, designed for comfort and convenience.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 4 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 2 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 2 Bath
+                    .grid-item_price
+                      span $230/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+                .gallery-item.desserts
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/3.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/3.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single') Deluxe Suite
+                    p
+                      | Indulge in luxury in our Deluxe Suite, featuring premium amenities and a stunning view.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 2 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 1 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 1 Bath
+                    .grid-item_price
+                      span $321/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+                .gallery-item.seafood
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/4.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/4.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single') Deluxe Triple Room 
+                    p
+                      | Our Deluxe Triple Room is perfect for groups or families, offering plenty of space and comfort.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 3 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 2 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 1 Bath
+                    .grid-item_price
+                      span $84/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+                .gallery-item.desserts
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/5.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/5.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single')  Family Room
+                    p
+                      | Create lasting memories in our Family Room, ideal for families seeking a cozy stay.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 4 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 2 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 1 Bath
+                    .grid-item_price
+                      span $543/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+                .gallery-item.seafood
+                  .grid-item-holder.hov_zoom
+                    img(src='images/room/6.jpg' alt='')
+                    a.box-media-zoom.single-popup-image(href='images/room/6.jpg')
+                      i.fa-light.fa-magnifying-glass
+                    .like-btn
+                      i.fa-light.fa-heart
+                      span Add to Wislist
+                  .grid-item-details
+                    h3
+                      a(href='/room-single') Superior Panorama Room
+                    p
+                      | Enjoy breathtaking views in our Superior Panorama Room, featuring modern amenities and spacious interiors.
+                    .room-card-details
+                      ul
+                        li
+                          i.fa-light.fa-user
+                          span 3 Guest
+                        li
+                          i.fa-light.fa-bed-front
+                          span 2 Bed
+                        li
+                          i.fa-light.fa-bath
+                          span 1 Bath
+                    .grid-item_price
+                      span $1030/Night
+                    a.gid_link(href='/room-single')
+                      span View Details
+                      i.fa-light.fa-arrow-right-long
+          .pagination
+            a.prevposts-link(href='#')
+              i.fa.fa-caret-left
+            a(href='#') 1
+            a.current-page(href='#') 2
+            a(href='#') 3
+            a(href='#') 4
+            a.nextposts-link(href='#')
+              i.fa.fa-caret-right
+      .limit-box
+  .content-dec
+    span
